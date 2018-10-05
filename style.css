@@ -1,3 +1,6 @@
+body {
+	background-color: gray;
+}
 nav {
 	background-color: blue;
 	min-height: 100px;
@@ -16,8 +19,20 @@ li {
 }
 
 #intro {
-	min-height: 500px;
+	min-height: 10em;
 	background-color: green;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#intro_text {
+	margin-left: auto;
+	margin-right: auto;
+	width: 20em;
+}
+
+#achieve {
+	background-color: pink;
 }
 
 h1 {
@@ -39,16 +54,20 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
 #win {
-	margin: 100px;
+	margin: 50px;
 	border: solid;
 	border-radius: 50%;
 	width: 200px;
 	height: 200px; 
 	text-align: center;
 	line-height: 200px;
+	box-shadow: 5px 5px red;
 }
 
 .projects {
@@ -64,7 +83,7 @@ h3 {
 	width: 200px;
 	height: 200px;
 	justify-content: space-around;
-	margin: 100px;
+	margin: 150px;
 	text-align: center;
 	line-height: 150px;
 	box-shadow: 5px 5px red;
