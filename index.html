@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Christian Santos</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">-->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+ <!-- </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Christian Santos</a>
@@ -124,5 +124,49 @@
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>-->
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="minify.js"></script>
+  </head>
+  <body>
+    <nav>
+    </nav>
+    <div> 
+      <div class="version">
+        <select id = 'version_check' onchange="change_option()">
+          <option value = '' disabled selected> Encryption or Decryption? </option>
+          <option value = 'Encrypt' id = 'Encrypt'> Encrypt </option>     
+          <option value = 'Decrypt' id = 'Decrypt'> Decrypt </option>
+        </select>
+      </div>
+      <div class="codes">
+      <select id = 'cipher_check' onchange="change_option()">
+        <option value = '' disabled selected> Pick a Cipher </option>
+        <option value = 'Caesar'> Caesar Cipher </option>
+        <option value = 'Atbash'> Atbash Cipher </option>
+        <option value = 'Hill'> Hill Cipher </option>
+        <option value = 'Affine'> Affine Cipher </option>
+        <option value = 'Baconian'> Baconian Cipher </option>
+        <option value = 'Vigenere'> Vigenere Cipher </option>
+        <option value = 'Aristocrat'> Aristocrat Cipher </option>
+        <option value= 'Patristocrat'> Patristocrat Cipher </option>
+      </select>
+      </div>
+      <div class="output">
+        <p id = 'input'>  </p>
+        <p id = 'keys'>  </p>
+        <p id = 'output'>  </p>
+        <p id = 'message_input'>Message</p> <input type='text' id='message'/>
+        <p id = 'key_input'>Key</p><input type='text' id='key'/>
+        <p id = 'key_input2'>Key</p><input type="text" id="key2">
+        <div id = checkbox> <input type = 'checkbox' name = 'Random Key' onclick = 'change_option()' id = 'checkbox_input'/> Randomize Key </div>
+      </div>
+      <br><p><button onclick="execute()">Submit</button></p>
+      <button onclick="repeat(key)">Repeat Check</button>
+    </div>
   </body>
 </html>
