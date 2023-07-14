@@ -1,9 +1,14 @@
 :root {
-    --color1: #E8F1F2;
-    --color2: #1B98E0;
-    --color3: #247BA0;
-    --color4: #006494;
-    --color5: #13293D;
-  }
-
+  /* Background color */
+  --color1: hsl(218, 20%, 15%);   /* Dark Blue */
   
+  /* Text color */
+  --color2: hsl(260, 30%, 60%);  /* Dark Blue (Highlight) */
+  
+  /* Additional colors */
+  --color3: hsl(136, 69%, 53%);   /* Teal */
+  --color4: hsl(11, 61%, 71%);    /* Light Orange */
+  
+  /* Text hover color */
+  --color5: hsl(0, 12%, 80%);     /* White (Text) */
+}
