@@ -1,0 +1,1 @@
+This is my personal website. I'm currently in the process of overhauling the site to be more in line with new technologies
