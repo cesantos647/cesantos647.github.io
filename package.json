@@ -5,14 +5,13 @@
   "private": true,
   "scripts": {
     "predeploy": "next build",
-    "deploy": "next build && next export && npx gh-pages -d out",
+    "deploy": "next build && npx gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "next": "latest",
-    "node": "^19.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0"
@@ -20,5 +19,4 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   }
-  
 }
