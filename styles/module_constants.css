@@ -1,0 +1,16 @@
+.rdp {
+  /* Background color */
+  --color1: #212121;
+  --color1a: hsl(218, 20%, 15%);   /* Dark Blue */
+  
+  /* Text Highlight color */
+  --color2: #BDBDBD;  /* Dark Blue (Highlight) */
+  --color2a: hsl(260, 30%, 60%);
+  /* Additional colors */
+  --color3: hsl(136, 69%, 53%);   /* Teal */
+  --color4: hsl(11, 61%, 71%);    /* Light Orange */
+  
+  /* Text color */
+  --color5: #F5F5F5;
+  --color5a: hsl(0, 12%, 80%);     /* White (Text) */
+}
