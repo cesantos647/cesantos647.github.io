@@ -1,6 +1,11 @@
 {
+  "name": "personal-website",
+  "homepage": "https://cesantos647.github.io",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "next build",
+    "deploy": "next build && next export && npx gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -11,5 +16,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
+  
 }
