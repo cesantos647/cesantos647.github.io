@@ -37,8 +37,10 @@
 
 
 .description {
-  line-height: 1.5;
+  line-height: 2;
   font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem;
 }
 
 .grid {
@@ -87,9 +89,37 @@
   height: 1em;
 }
 
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+  .description code {
+    font-size: 1.8rem;
+    padding: 0.8rem;
+  }
+}
+
+.hoverEffect {
+  /* Define styles for the hover effect here */
+  transition: all 0.3s ease;
+}
+
+.hoverEffect:hover {
+  /* Define the styles to apply when the button is hovered */
+  background-color: var(--color5); /* For example, change the background color */
+  color: var(--color1); /* Change the text color */
+  transform: scale(1.05); /* Optional: Apply a scale effect */
+  /* Add any other styles you want to apply when the button is hovered */
+}
+
+.description code {
+  background: var(--color5);
+  color: var(--color2);
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 2.3rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
