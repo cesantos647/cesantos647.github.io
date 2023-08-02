@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from 'styles/Home.module.css';
 import Link from 'next/link';
-//import '../styles/globals.css'
 export default function Home() {
   const DownloadButton = () => {
     const handleClick = () => {
@@ -46,7 +45,9 @@ export default function Home() {
 
         <div className={styles.grid}>
           
-          <DownloadButton/>
+          <Link href="/data/resume.pdf" download className={`${styles.card} ${styles.hoverEffect}`}>
+            <h3>Download Resume &rarr;</h3>
+            </Link>
 
           <Link href="https://github.com/cesantos647/" className={`${styles.card} ${styles.hoverEffect}`}>
             <h3>Portfolio &rarr;</h3>
@@ -54,20 +55,6 @@ export default function Home() {
 
         </div> 
       </main>
-      {/*
-      <footer>
-        {/* <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}, Might want to put icons for all my stuff here and not put them at the very top
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a> //}
-        <a>Github /</a>
-        <a>/ LinkedIn</a>
-      </footer>
-      */}
 
       <style jsx>{`
         main {
@@ -106,7 +93,6 @@ export default function Home() {
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
       `}</style>
-
     </div>
   )
 }

@@ -1,4 +1,4 @@
-@import '../styles/module_constants.css';
+@import 'module_constants.css';
 
 .container {
     max-width: 800px;

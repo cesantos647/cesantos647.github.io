@@ -1,4 +1,4 @@
-@import '../styles/module_constants.css';
+@import 'module_constants.css';
 
 .container {
   min-height: 100vh;
@@ -109,7 +109,7 @@
 .hoverEffect:hover {
   /* Define the styles to apply when the button is hovered */
   background-color: var(--color5); /* For example, change the background color */
-  color: var(--color1); /* Change the text color */
+  color: #212121; /* Change the text color */
   transform: scale(1.05); /* Optional: Apply a scale effect */
   /* Add any other styles you want to apply when the button is hovered */
 }
